@@ -35,6 +35,8 @@
             this.mult = new System.Windows.Forms.Button();
             this.div = new System.Windows.Forms.Button();
             this.output = new System.Windows.Forms.TextBox();
+            this.square = new System.Windows.Forms.Button();
+            this.squareroot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // input1
@@ -53,7 +55,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(241, 227);
+            this.add.Location = new System.Drawing.Point(70, 219);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 23);
             this.add.TabIndex = 2;
@@ -63,7 +65,7 @@
             // 
             // minus
             // 
-            this.minus.Location = new System.Drawing.Point(410, 227);
+            this.minus.Location = new System.Drawing.Point(178, 219);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(75, 23);
             this.minus.TabIndex = 3;
@@ -73,7 +75,7 @@
             // 
             // mult
             // 
-            this.mult.Location = new System.Drawing.Point(241, 286);
+            this.mult.Location = new System.Drawing.Point(70, 278);
             this.mult.Name = "mult";
             this.mult.Size = new System.Drawing.Size(75, 23);
             this.mult.TabIndex = 4;
@@ -83,7 +85,7 @@
             // 
             // div
             // 
-            this.div.Location = new System.Drawing.Point(410, 286);
+            this.div.Location = new System.Drawing.Point(178, 278);
             this.div.Name = "div";
             this.div.Size = new System.Drawing.Size(75, 23);
             this.div.TabIndex = 5;
@@ -98,11 +100,33 @@
             this.output.Size = new System.Drawing.Size(100, 20);
             this.output.TabIndex = 6;
             // 
+            // square
+            // 
+            this.square.Location = new System.Drawing.Point(525, 219);
+            this.square.Name = "square";
+            this.square.Size = new System.Drawing.Size(75, 23);
+            this.square.TabIndex = 7;
+            this.square.Text = "x^2";
+            this.square.UseVisualStyleBackColor = true;
+            this.square.Click += new System.EventHandler(this.Click2);
+            // 
+            // squareroot
+            // 
+            this.squareroot.Location = new System.Drawing.Point(525, 278);
+            this.squareroot.Name = "squareroot";
+            this.squareroot.Size = new System.Drawing.Size(75, 23);
+            this.squareroot.TabIndex = 8;
+            this.squareroot.Text = "x^(1/2)";
+            this.squareroot.UseVisualStyleBackColor = true;
+            this.squareroot.Click += new System.EventHandler(this.Click2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 371);
+            this.Controls.Add(this.squareroot);
+            this.Controls.Add(this.square);
             this.Controls.Add(this.output);
             this.Controls.Add(this.div);
             this.Controls.Add(this.mult);
@@ -126,6 +150,8 @@
         private System.Windows.Forms.Button mult;
         private System.Windows.Forms.Button div;
         private System.Windows.Forms.TextBox output;
+        private System.Windows.Forms.Button square;
+        private System.Windows.Forms.Button squareroot;
     }
 }
 

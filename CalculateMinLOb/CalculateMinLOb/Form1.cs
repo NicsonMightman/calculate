@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CalculateMinLOb
@@ -19,7 +12,6 @@ namespace CalculateMinLOb
 
         private void Click(object sender, EventArgs e)
         {
-          
             string firstValueText = input1.Text;
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = input.Text;
@@ -27,7 +19,17 @@ namespace CalculateMinLOb
 
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(firstValue, secondValue);
-            
+
+            output.Text = result.ToString();
+        }
+
+        private void Click2(object sender, EventArgs e)
+        {
+            string firstValueText = input1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstValue);
+
             output.Text = result.ToString();
         }
     }
