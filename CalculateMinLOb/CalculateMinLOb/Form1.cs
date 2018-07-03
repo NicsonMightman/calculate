@@ -10,7 +10,7 @@ namespace CalculateMinLOb
             InitializeComponent();
         }
 
-        private void Click(object sender, EventArgs e)
+        private void TwoArgumentsButtonClick(object sender, EventArgs e)
         {
             string firstValueText = input1.Text;
             double firstValue = Convert.ToDouble(firstValueText);
@@ -23,7 +23,7 @@ namespace CalculateMinLOb
             output.Text = result.ToString();
         }
 
-        private void Click2(object sender, EventArgs e)
+        private void OneArgumentButtonClick(object sender, EventArgs e)
         {
             string firstValueText = input1.Text;
             double firstValue = Convert.ToDouble(firstValueText);

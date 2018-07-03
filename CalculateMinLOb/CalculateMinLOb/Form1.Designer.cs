@@ -61,7 +61,7 @@
             this.add.TabIndex = 2;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.Click);
+            this.add.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
             // minus
             // 
@@ -71,7 +71,7 @@
             this.minus.TabIndex = 3;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.Click);
+            this.minus.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
             // mult
             // 
@@ -81,7 +81,7 @@
             this.mult.TabIndex = 4;
             this.mult.Text = "*";
             this.mult.UseVisualStyleBackColor = true;
-            this.mult.Click += new System.EventHandler(this.Click);
+            this.mult.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
             // div
             // 
@@ -91,7 +91,7 @@
             this.div.TabIndex = 5;
             this.div.Text = "/";
             this.div.UseVisualStyleBackColor = true;
-            this.div.Click += new System.EventHandler(this.Click);
+            this.div.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
             // output
             // 
@@ -108,7 +108,7 @@
             this.square.TabIndex = 7;
             this.square.Text = "x^2";
             this.square.UseVisualStyleBackColor = true;
-            this.square.Click += new System.EventHandler(this.Click2);
+            this.square.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
             // squareroot
             // 
@@ -118,7 +118,7 @@
             this.squareroot.TabIndex = 8;
             this.squareroot.Text = "x^(1/2)";
             this.squareroot.UseVisualStyleBackColor = true;
-            this.squareroot.Click += new System.EventHandler(this.Click2);
+            this.squareroot.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
             // Form1
             // 
