@@ -17,32 +17,6 @@ namespace CalculateMinLOb
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
- 
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-     
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        
-
         private void Click(object sender, EventArgs e)
         {
           
@@ -54,8 +28,6 @@ namespace CalculateMinLOb
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(firstValue, secondValue);
             
-            
-
             output.Text = result.ToString();
         }
     }

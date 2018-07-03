@@ -43,7 +43,6 @@
             this.input1.Name = "input1";
             this.input1.Size = new System.Drawing.Size(94, 20);
             this.input1.TabIndex = 0;
-            this.input1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // input
             // 
@@ -51,7 +50,6 @@
             this.input.Name = "input";
             this.input.Size = new System.Drawing.Size(100, 20);
             this.input.TabIndex = 1;
-            this.input.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // add
             // 
@@ -99,7 +97,6 @@
             this.output.Name = "output";
             this.output.Size = new System.Drawing.Size(100, 20);
             this.output.TabIndex = 6;
-            this.output.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Form1
             // 
