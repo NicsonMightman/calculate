@@ -24,12 +24,7 @@ namespace CalculateMinLOb
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string firstValueText = input1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            string secondValueText = input.Text;
-            double secondValue = Convert.ToDouble(secondValueText);
-            double result = secondValue + firstValue;
-            output.Text = result.ToString();
+ 
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
