@@ -45,29 +45,16 @@ namespace CalculateMinLOb
 
         private void Click(object sender, EventArgs e)
         {
-            double result;
+          
             string firstValueText = input1.Text;
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = input.Text;
             double secondValue = Convert.ToDouble(secondValueText);
-            switch (((Button)sender).Name)
-            {
-                case "add":
-                    result = secondValue + firstValue;
-                    break;
-                case "minus":
-                    result = firstValue - secondValue;
-                    break;
-                case "mult":
-                    result = firstValue * secondValue;
-                    break;
-                case "div":
-                    result = firstValue / secondValue;
 
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstValue, secondValue);
+            
+            
 
             output.Text = result.ToString();
         }

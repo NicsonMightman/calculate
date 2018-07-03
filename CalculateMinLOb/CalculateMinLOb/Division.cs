@@ -1,15 +1,14 @@
 ﻿namespace CalculateMinLOb
 {
-    public class Minus : ITwoArgumentsCalculator
+    public class Division: ITwoArgumentsCalculator
     {
 
         public double Calculate(double firstArgument, double secondArgument)
 
         {
-            return firstArgument - secondArgument;
+            return firstArgument / secondArgument;
 
         }
 
     }
 }
-
