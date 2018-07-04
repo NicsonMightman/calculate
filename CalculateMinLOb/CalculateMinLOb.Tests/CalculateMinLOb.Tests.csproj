@@ -47,8 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgumebtFolder\SquareTestStrong.cs" />
-    <Compile Include="OneArgumebtFolder\TwoInXTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\OneArgumentFactoryTests.cs" />
+    <Compile Include="OneArgumentFolder\SquareTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\TwoInXTestStrong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgumentsFolder\AdditionTests.cs" />
     <Compile Include="TwoArgumentsFolder\AdditionTestStrong.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="TwoArgumentsFolder\MinusTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\MultiplicationTests.cs" />
     <Compile Include="TwoArgumentsFolder\MultiplicationTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\TwoArgumentsFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculateMinLOb\CalculateMinLOb.csproj">

@@ -1,7 +1,7 @@
 ﻿using CalculateMinLOb.OneArgumentFolder;
 using NUnit.Framework;
 
-namespace CalculateMinLOb.Tests.OneArgumebtFolder
+namespace CalculateMinLOb.Tests.OneArgumentFolder
 {
 
     [TestFixture]
