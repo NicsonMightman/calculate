@@ -49,6 +49,7 @@
             this.input1.Name = "input1";
             this.input1.Size = new System.Drawing.Size(102, 20);
             this.input1.TabIndex = 0;
+            this.input1.Text = "3";
             // 
             // input
             // 

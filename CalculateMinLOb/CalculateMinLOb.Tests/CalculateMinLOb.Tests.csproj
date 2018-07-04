@@ -47,11 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumebtFolder\SquareTestStrong.cs" />
+    <Compile Include="OneArgumebtFolder\TwoInXTestStrong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgumentsFolder\AdditionTests.cs" />
+    <Compile Include="TwoArgumentsFolder\AdditionTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\DivisionTests.cs" />
+    <Compile Include="TwoArgumentsFolder\DivisionTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\MinusTests.cs" />
+    <Compile Include="TwoArgumentsFolder\MinusTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\MultiplicationTests.cs" />
+    <Compile Include="TwoArgumentsFolder\MultiplicationTestStrong.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculateMinLOb\CalculateMinLOb.csproj">
