@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Forms;
+using CalculateMinLOb.OneArgumentFolder;
+using CalculateMinLOb.TwoArgumentsFolder;
 
 namespace CalculateMinLOb
 {

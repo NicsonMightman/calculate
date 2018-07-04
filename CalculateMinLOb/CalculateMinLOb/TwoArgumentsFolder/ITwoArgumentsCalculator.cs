@@ -1,4 +1,4 @@
-﻿namespace CalculateMinLOb
+﻿namespace CalculateMinLOb.TwoArgumentsFolder
 {
     public interface ITwoArgumentsCalculator
     {

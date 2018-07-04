@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalculateMinLOb
+namespace CalculateMinLOb.TwoArgumentsFolder
 {
     public class TwoArgumentsFactory
     {

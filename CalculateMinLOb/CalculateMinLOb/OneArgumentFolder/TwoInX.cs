@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalculateMinLOb
+namespace CalculateMinLOb.OneArgumentFolder
 {
     public class TwoInX : IOneArgumentCalculator
     {
