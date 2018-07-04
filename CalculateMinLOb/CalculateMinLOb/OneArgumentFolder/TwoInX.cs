@@ -2,12 +2,12 @@
 
 namespace CalculateMinLOb
 {
-    public class SquareRoot : IOneArgumentCalculator
+    public class TwoInX : IOneArgumentCalculator
     {
 
         public double Calculate(double firstArgument)
         {
-            return Math.Sqrt(firstArgument);
+            return Math.Pow(2, firstArgument);
         }
     }
 }

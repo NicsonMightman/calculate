@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace CalculateMinLOb
@@ -30,7 +31,7 @@ namespace CalculateMinLOb
             IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(firstValue);
 
-            output.Text = result.ToString();
+            output.Text = result.ToString(CultureInfo.CurrentCulture);
         }
     }
 

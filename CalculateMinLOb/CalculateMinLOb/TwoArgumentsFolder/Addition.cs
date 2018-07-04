@@ -1,10 +1,10 @@
 ﻿namespace CalculateMinLOb
 {
-    public class Multiplication : ITwoArgumentsCalculator
+    public class Addition : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstArgument * secondArgument;
+            return firstArgument + secondArgument;
         }
-      }
+    }
 }

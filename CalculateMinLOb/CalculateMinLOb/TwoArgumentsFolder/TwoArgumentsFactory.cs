@@ -13,7 +13,7 @@ namespace CalculateMinLOb
                 case "mult": return new Multiplication();
                 case "div": return new Division();
                 default:
-                throw new Exception("Неизвестная операция");
+                    throw new Exception("Неизвестная операция");
             }
         }
     }

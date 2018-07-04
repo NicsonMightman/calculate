@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculateMinLOb
 {
-   public interface IOneArgumentCalculator
+    class Tangens
     {
-        double Calculate(double firstArgument);
     }
 }

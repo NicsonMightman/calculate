@@ -11,7 +11,7 @@ namespace CalculateMinLOb
 
         public double Calculate(double firstArgument)
         {
-            return Math.Pow(firstArgument,2);
+            return Math.Pow(firstArgument, 2);
         }
     }
 }

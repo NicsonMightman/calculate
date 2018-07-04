@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CalculateMinLOb
 {
@@ -13,9 +9,9 @@ namespace CalculateMinLOb
             switch (calculatorname)
             {
                 case "square": return new Square();
-                case "squareroot": return new SquareRoot();
+                case "twoinx": return new TwoInX();
                 default:
-                throw new Exception("Неизвестная операция");
+                    throw new Exception("Неизвестная операция");
             }
         }
     }
