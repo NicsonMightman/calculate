@@ -15,25 +15,42 @@ namespace CalculateMinLOb
 
         private void TwoArgumentsButtonClick(object sender, EventArgs e)
         {
-            string firstValueText = input1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            string secondValueText = input.Text;
-            double secondValue = Convert.ToDouble(secondValueText);
+            try
+            {
 
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(firstValue, secondValue);
 
-            output.Text = result.ToString();
+                string firstValueText = input1.Text;
+                double firstValue = Convert.ToDouble(firstValueText);
+                string secondValueText = input.Text;
+                double secondValue = Convert.ToDouble(secondValueText);
+
+                ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(firstValue, secondValue);
+
+                output.Text = result.ToString();
+            }
+            catch (Exception TwoArgumentsException)
+            {
+                output.Text = "Error";
+            }
         }
 
         private void OneArgumentButtonClick(object sender, EventArgs e)
         {
-            string firstValueText = input1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(firstValue);
+            try
+            {
+                string firstValueText = input1.Text;
+                double firstValue = Convert.ToDouble(firstValueText);
+                IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(firstValue);
 
-            output.Text = result.ToString(CultureInfo.CurrentCulture);
+                output.Text = result.ToString(CultureInfo.CurrentCulture);
+            }
+            catch (Exception OneArgumentException)
+            {
+                output.Text = "Error";
+            }
+
         }
     }
 

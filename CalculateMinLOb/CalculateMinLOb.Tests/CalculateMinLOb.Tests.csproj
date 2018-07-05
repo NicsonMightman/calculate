@@ -47,8 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentFolder\ArcCosinusTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\ArcSinusTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\ArcTangensTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\CatangensTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\CosinusTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\Log2xTestStrong.cs" />
     <Compile Include="OneArgumentFolder\OneArgumentFactoryTests.cs" />
+    <Compile Include="OneArgumentFolder\ReverseTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\SinusTestStrong.cs" />
     <Compile Include="OneArgumentFolder\SquareTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\TangensTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\TenInX.cs" />
     <Compile Include="OneArgumentFolder\TwoInXTestStrong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgumentsFolder\AdditionTests.cs" />

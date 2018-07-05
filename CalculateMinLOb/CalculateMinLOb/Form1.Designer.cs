@@ -47,6 +47,11 @@
             this.teninx = new System.Windows.Forms.Button();
             this.reverse = new System.Windows.Forms.Button();
             this.log2x = new System.Windows.Forms.Button();
+            this.xiny = new System.Windows.Forms.Button();
+            this.degreeroot = new System.Windows.Forms.Button();
+            this.logxy = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // input1
@@ -55,7 +60,6 @@
             this.input1.Name = "input1";
             this.input1.Size = new System.Drawing.Size(102, 20);
             this.input1.TabIndex = 0;
-            this.input1.Text = "3";
             // 
             // input
             // 
@@ -231,11 +235,64 @@
             this.log2x.UseVisualStyleBackColor = true;
             this.log2x.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
+            // xiny
+            // 
+            this.xiny.Location = new System.Drawing.Point(10, 132);
+            this.xiny.Name = "xiny";
+            this.xiny.Size = new System.Drawing.Size(75, 23);
+            this.xiny.TabIndex = 19;
+            this.xiny.Text = "x^y";
+            this.xiny.UseVisualStyleBackColor = true;
+            this.xiny.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // degreeroot
+            // 
+            this.degreeroot.Location = new System.Drawing.Point(12, 161);
+            this.degreeroot.Name = "degreeroot";
+            this.degreeroot.Size = new System.Drawing.Size(75, 23);
+            this.degreeroot.TabIndex = 20;
+            this.degreeroot.Text = "x^(1/y)";
+            this.degreeroot.UseVisualStyleBackColor = true;
+            this.degreeroot.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // logxy
+            // 
+            this.logxy.Location = new System.Drawing.Point(12, 190);
+            this.logxy.Name = "logxy";
+            this.logxy.Size = new System.Drawing.Size(75, 23);
+            this.logxy.TabIndex = 21;
+            this.logxy.Text = "Logx(y)";
+            this.logxy.UseVisualStyleBackColor = true;
+            this.logxy.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(12, 219);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 22;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(12, 248);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 553);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.logxy);
+            this.Controls.Add(this.degreeroot);
+            this.Controls.Add(this.xiny);
             this.Controls.Add(this.log2x);
             this.Controls.Add(this.reverse);
             this.Controls.Add(this.teninx);
@@ -283,6 +340,11 @@
         private System.Windows.Forms.Button teninx;
         private System.Windows.Forms.Button reverse;
         private System.Windows.Forms.Button log2x;
+        private System.Windows.Forms.Button xiny;
+        private System.Windows.Forms.Button degreeroot;
+        private System.Windows.Forms.Button logxy;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

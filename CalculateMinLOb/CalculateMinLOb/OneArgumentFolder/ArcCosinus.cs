@@ -7,7 +7,16 @@ namespace CalculateMinLOb.OneArgumentFolder
 
         public double Calculate(double firstArgument)
         {
-            return Math.Acos(firstArgument);
+            if ((-1.0 <= firstArgument) && (firstArgument <= 1.0))
+            {
+
+                return Math.Acos(firstArgument);
+            }
+
+            else
+            {
+                throw new Exception("arccos");
+            }
         }
     }
 }
