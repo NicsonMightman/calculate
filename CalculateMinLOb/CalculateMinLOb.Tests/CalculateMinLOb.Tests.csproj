@@ -52,6 +52,7 @@
     <Compile Include="OneArgumentFolder\ArcTangensTestStrong.cs" />
     <Compile Include="OneArgumentFolder\CatangensTestStrong.cs" />
     <Compile Include="OneArgumentFolder\CosinusTestStrong.cs" />
+    <Compile Include="OneArgumentFolder\Log10xTestStrong.cs" />
     <Compile Include="OneArgumentFolder\Log2xTestStrong.cs" />
     <Compile Include="OneArgumentFolder\OneArgumentFactoryTests.cs" />
     <Compile Include="OneArgumentFolder\ReverseTestStrong.cs" />

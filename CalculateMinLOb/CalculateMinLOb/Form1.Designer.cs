@@ -50,8 +50,13 @@
             this.xiny = new System.Windows.Forms.Button();
             this.degreeroot = new System.Windows.Forms.Button();
             this.logxy = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.min = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
+            this.remaine = new System.Windows.Forms.Button();
+            this.average = new System.Windows.Forms.Button();
+            this.averagegeo = new System.Windows.Forms.Button();
+            this.xdivy = new System.Windows.Forms.Button();
+            this.log10x = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // input1
@@ -227,9 +232,9 @@
             // 
             // log2x
             // 
-            this.log2x.Location = new System.Drawing.Point(303, 190);
+            this.log2x.Location = new System.Drawing.Point(373, 277);
             this.log2x.Name = "log2x";
-            this.log2x.Size = new System.Drawing.Size(51, 23);
+            this.log2x.Size = new System.Drawing.Size(75, 23);
             this.log2x.TabIndex = 18;
             this.log2x.Text = "Log2(x)";
             this.log2x.UseVisualStyleBackColor = true;
@@ -265,31 +270,88 @@
             this.logxy.UseVisualStyleBackColor = true;
             this.logxy.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
-            // button4
+            // min
             // 
-            this.button4.Location = new System.Drawing.Point(12, 219);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.min.Location = new System.Drawing.Point(12, 219);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(75, 23);
+            this.min.TabIndex = 22;
+            this.min.Text = "Min";
+            this.min.UseVisualStyleBackColor = true;
+            this.min.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
-            // button5
+            // max
             // 
-            this.button5.Location = new System.Drawing.Point(12, 248);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.max.Location = new System.Drawing.Point(12, 248);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(75, 23);
+            this.max.TabIndex = 23;
+            this.max.Text = "Max";
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // remaine
+            // 
+            this.remaine.Location = new System.Drawing.Point(140, 132);
+            this.remaine.Name = "remaine";
+            this.remaine.Size = new System.Drawing.Size(75, 23);
+            this.remaine.TabIndex = 24;
+            this.remaine.Text = "Remaine";
+            this.remaine.UseVisualStyleBackColor = true;
+            this.remaine.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // average
+            // 
+            this.average.Location = new System.Drawing.Point(140, 162);
+            this.average.Name = "average";
+            this.average.Size = new System.Drawing.Size(75, 23);
+            this.average.TabIndex = 25;
+            this.average.Text = "Average";
+            this.average.UseVisualStyleBackColor = true;
+            this.average.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // averagegeo
+            // 
+            this.averagegeo.Location = new System.Drawing.Point(140, 192);
+            this.averagegeo.Name = "averagegeo";
+            this.averagegeo.Size = new System.Drawing.Size(75, 23);
+            this.averagegeo.TabIndex = 26;
+            this.averagegeo.Text = "AverageGeo";
+            this.averagegeo.UseVisualStyleBackColor = true;
+            this.averagegeo.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // xdivy
+            // 
+            this.xdivy.Location = new System.Drawing.Point(140, 222);
+            this.xdivy.Name = "xdivy";
+            this.xdivy.Size = new System.Drawing.Size(75, 23);
+            this.xdivy.TabIndex = 27;
+            this.xdivy.Text = "XDivY";
+            this.xdivy.UseVisualStyleBackColor = true;
+            this.xdivy.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            // 
+            // log10x
+            // 
+            this.log10x.Location = new System.Drawing.Point(373, 306);
+            this.log10x.Name = "log10x";
+            this.log10x.Size = new System.Drawing.Size(75, 23);
+            this.log10x.TabIndex = 28;
+            this.log10x.Text = "Log10(x)";
+            this.log10x.UseVisualStyleBackColor = true;
+            this.log10x.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 553);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.log10x);
+            this.Controls.Add(this.xdivy);
+            this.Controls.Add(this.averagegeo);
+            this.Controls.Add(this.average);
+            this.Controls.Add(this.remaine);
+            this.Controls.Add(this.max);
+            this.Controls.Add(this.min);
             this.Controls.Add(this.logxy);
             this.Controls.Add(this.degreeroot);
             this.Controls.Add(this.xiny);
@@ -343,8 +405,13 @@
         private System.Windows.Forms.Button xiny;
         private System.Windows.Forms.Button degreeroot;
         private System.Windows.Forms.Button logxy;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button min;
+        private System.Windows.Forms.Button max;
+        private System.Windows.Forms.Button remaine;
+        private System.Windows.Forms.Button average;
+        private System.Windows.Forms.Button averagegeo;
+        private System.Windows.Forms.Button xdivy;
+        private System.Windows.Forms.Button log10x;
     }
 }
 

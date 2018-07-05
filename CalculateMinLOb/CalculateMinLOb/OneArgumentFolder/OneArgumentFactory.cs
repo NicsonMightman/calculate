@@ -20,6 +20,7 @@ namespace CalculateMinLOb.OneArgumentFolder
                 case "teninx": return new TenInX();
                 case "reverse": return new Reverse();
                 case "log2x": return new Log2x();
+                case "log10x": return new Log10x();
                 default:
                     throw new Exception("Неизвестная операция");
             }
