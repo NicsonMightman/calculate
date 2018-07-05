@@ -56,8 +56,11 @@
     <Compile Include="OneArgumentFolder\ArcTangens.cs" />
     <Compile Include="OneArgumentFolder\Catangens.cs" />
     <Compile Include="OneArgumentFolder\Cosinus.cs" />
+    <Compile Include="OneArgumentFolder\Log2x.cs" />
+    <Compile Include="OneArgumentFolder\Reverse.cs" />
     <Compile Include="OneArgumentFolder\Sinus.cs" />
     <Compile Include="OneArgumentFolder\Tangens.cs" />
+    <Compile Include="OneArgumentFolder\TenInX.cs" />
     <Compile Include="TwoArgumentsFolder\Addition.cs" />
     <Compile Include="TwoArgumentsFolder\Division.cs" />
     <Compile Include="Form1.cs">

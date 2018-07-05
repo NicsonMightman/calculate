@@ -44,6 +44,9 @@
             this.arcsin = new System.Windows.Forms.Button();
             this.arccos = new System.Windows.Forms.Button();
             this.arctan = new System.Windows.Forms.Button();
+            this.teninx = new System.Windows.Forms.Button();
+            this.reverse = new System.Windows.Forms.Button();
+            this.log2x = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // input1
@@ -198,11 +201,44 @@
             this.arctan.UseVisualStyleBackColor = true;
             this.arctan.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
+            // teninx
+            // 
+            this.teninx.Location = new System.Drawing.Point(303, 132);
+            this.teninx.Name = "teninx";
+            this.teninx.Size = new System.Drawing.Size(51, 23);
+            this.teninx.TabIndex = 16;
+            this.teninx.Text = "10^x";
+            this.teninx.UseVisualStyleBackColor = true;
+            this.teninx.Click += new System.EventHandler(this.OneArgumentButtonClick);
+            // 
+            // reverse
+            // 
+            this.reverse.Location = new System.Drawing.Point(303, 161);
+            this.reverse.Name = "reverse";
+            this.reverse.Size = new System.Drawing.Size(51, 23);
+            this.reverse.TabIndex = 17;
+            this.reverse.Text = "1/x";
+            this.reverse.UseVisualStyleBackColor = true;
+            this.reverse.Click += new System.EventHandler(this.OneArgumentButtonClick);
+            // 
+            // log2x
+            // 
+            this.log2x.Location = new System.Drawing.Point(303, 190);
+            this.log2x.Name = "log2x";
+            this.log2x.Size = new System.Drawing.Size(51, 23);
+            this.log2x.TabIndex = 18;
+            this.log2x.Text = "Log2(x)";
+            this.log2x.UseVisualStyleBackColor = true;
+            this.log2x.Click += new System.EventHandler(this.OneArgumentButtonClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 553);
+            this.Controls.Add(this.log2x);
+            this.Controls.Add(this.reverse);
+            this.Controls.Add(this.teninx);
             this.Controls.Add(this.arctan);
             this.Controls.Add(this.arccos);
             this.Controls.Add(this.arcsin);
@@ -244,6 +280,9 @@
         private System.Windows.Forms.Button arcsin;
         private System.Windows.Forms.Button arccos;
         private System.Windows.Forms.Button arctan;
+        private System.Windows.Forms.Button teninx;
+        private System.Windows.Forms.Button reverse;
+        private System.Windows.Forms.Button log2x;
     }
 }
 

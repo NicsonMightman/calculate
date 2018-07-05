@@ -18,6 +18,9 @@ namespace CalculateMinLOb.OneArgumentFolder
                 case "arcsin": return new ArcSinus();
                 case "arccos": return new ArcCosinus();
                 case "arctan": return new ArcTangens();
+                case "teninx": return new TenInX();
+                case "reverse": return new Reverse();
+                case "log2x": return new Log2x();
                 default:
                     throw new Exception("Неизвестная операция");
             }
