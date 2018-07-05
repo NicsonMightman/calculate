@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CalculateMinLOb
 {
-    class Catangens
+    public class Catangens : IOneArgumentCalculator
     {
+
+        public double Calculate(double firstArgument)
+        {
+            return 1 / Math.Tan(firstArgument);
+        }
     }
 }

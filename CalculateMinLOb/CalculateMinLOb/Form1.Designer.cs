@@ -40,7 +40,10 @@
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
-            this.ctan = new System.Windows.Forms.Button();
+            this.ctg = new System.Windows.Forms.Button();
+            this.arcsin = new System.Windows.Forms.Button();
+            this.arccos = new System.Windows.Forms.Button();
+            this.arctan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // input1
@@ -133,6 +136,7 @@
             this.sin.TabIndex = 9;
             this.sin.Text = "Sin(x)";
             this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
             // cos
             // 
@@ -142,6 +146,7 @@
             this.cos.TabIndex = 10;
             this.cos.Text = "Cos(x)";
             this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
             // tan
             // 
@@ -151,22 +156,57 @@
             this.tan.TabIndex = 11;
             this.tan.Text = "Tan(x)";
             this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
-            // ctan
+            // ctg
             // 
-            this.ctan.Location = new System.Drawing.Point(373, 161);
-            this.ctan.Name = "ctan";
-            this.ctan.Size = new System.Drawing.Size(75, 23);
-            this.ctan.TabIndex = 12;
-            this.ctan.Text = "Ctan(x)";
-            this.ctan.UseVisualStyleBackColor = true;
+            this.ctg.Location = new System.Drawing.Point(373, 161);
+            this.ctg.Name = "ctg";
+            this.ctg.Size = new System.Drawing.Size(75, 23);
+            this.ctg.TabIndex = 12;
+            this.ctg.Text = "Ctg(x)";
+            this.ctg.UseVisualStyleBackColor = true;
+            this.ctg.Click += new System.EventHandler(this.OneArgumentButtonClick);
+            // 
+            // arcsin
+            // 
+            this.arcsin.Location = new System.Drawing.Point(373, 190);
+            this.arcsin.Name = "arcsin";
+            this.arcsin.Size = new System.Drawing.Size(75, 23);
+            this.arcsin.TabIndex = 13;
+            this.arcsin.Text = "ArcSin(x)";
+            this.arcsin.UseVisualStyleBackColor = true;
+            this.arcsin.Click += new System.EventHandler(this.OneArgumentButtonClick);
+            // 
+            // arccos
+            // 
+            this.arccos.Location = new System.Drawing.Point(373, 219);
+            this.arccos.Name = "arccos";
+            this.arccos.Size = new System.Drawing.Size(75, 23);
+            this.arccos.TabIndex = 14;
+            this.arccos.Text = "ArcCos(x)";
+            this.arccos.UseVisualStyleBackColor = true;
+            this.arccos.Click += new System.EventHandler(this.OneArgumentButtonClick);
+            // 
+            // arctan
+            // 
+            this.arctan.Location = new System.Drawing.Point(373, 248);
+            this.arctan.Name = "arctan";
+            this.arctan.Size = new System.Drawing.Size(75, 23);
+            this.arctan.TabIndex = 15;
+            this.arctan.Text = "ArcTan(x)";
+            this.arctan.UseVisualStyleBackColor = true;
+            this.arctan.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 553);
-            this.Controls.Add(this.ctan);
+            this.Controls.Add(this.arctan);
+            this.Controls.Add(this.arccos);
+            this.Controls.Add(this.arcsin);
+            this.Controls.Add(this.ctg);
             this.Controls.Add(this.tan);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
@@ -200,7 +240,10 @@
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
         private System.Windows.Forms.Button tan;
-        private System.Windows.Forms.Button ctan;
+        private System.Windows.Forms.Button ctg;
+        private System.Windows.Forms.Button arcsin;
+        private System.Windows.Forms.Button arccos;
+        private System.Windows.Forms.Button arctan;
     }
 }
 

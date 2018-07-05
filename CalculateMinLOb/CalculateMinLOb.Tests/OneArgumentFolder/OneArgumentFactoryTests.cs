@@ -1,6 +1,5 @@
 ﻿using System;
 using CalculateMinLOb.OneArgumentFolder;
-using CalculateMinLOb.TwoArgumentsFolder;
 using NUnit.Framework;
 
 namespace CalculateMinLOb.Tests.TwoArgumentsFolder

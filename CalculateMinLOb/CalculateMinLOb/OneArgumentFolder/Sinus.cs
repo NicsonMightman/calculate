@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 
-namespace CalculateMinLOb
+namespace CalculateMinLOb.OneArgumentFolder
 {
-    class Sinus
+    public class Sinus : IOneArgumentCalculator
     {
+
+        public double Calculate(double firstArgument)
+        {
+            return Math.Sin(firstArgument);
+        }
     }
 }

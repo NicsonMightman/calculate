@@ -2,12 +2,12 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
-    public class Cosinus : IOneArgumentCalculator
+    public class ArcSinus : IOneArgumentCalculator
     {
 
         public double Calculate(double firstArgument)
         {
-            return Math.Cos(firstArgument);
+            return Math.Asin(firstArgument);
         }
     }
 }
