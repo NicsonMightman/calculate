@@ -63,8 +63,8 @@
     <Compile Include="OneArgumentFolder\Tangens.cs" />
     <Compile Include="OneArgumentFolder\TenInX.cs" />
     <Compile Include="TwoArgumentsFolder\Addition.cs" />
-    <Compile Include="TwoArgumentsFolder\Average.cs" />
-    <Compile Include="TwoArgumentsFolder\AverageGeo.cs" />
+    <Compile Include="TwoArgumentsFolder\ArithmeticMean.cs" />
+    <Compile Include="TwoArgumentsFolder\GeometricMean.cs" />
     <Compile Include="TwoArgumentsFolder\DegreeRoot.cs" />
     <Compile Include="TwoArgumentsFolder\Division.cs" />
     <Compile Include="Form1.cs">

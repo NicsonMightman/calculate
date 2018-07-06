@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculateMinLOb.TwoArgumentsFolder
+﻿namespace CalculateMinLOb.TwoArgumentsFolder
 {
+    /// <summary>
+    /// Function computes the minimum value between two points
+    /// </summary>
     public class Minimum : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            if (firstArgument > secondArgument) return secondArgument;
-            return firstArgument;
+            return firstArgument > secondArgument ? secondArgument : firstArgument;
         }
     }
 }

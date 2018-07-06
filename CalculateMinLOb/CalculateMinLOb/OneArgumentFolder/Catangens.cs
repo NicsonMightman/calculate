@@ -1,7 +1,10 @@
 ﻿using System;
 
-namespace CalculateMinLOb
+namespace CalculateMinLOb.OneArgumentFolder
 {
+    /// <summary>
+    /// Function computes the Catangens
+    /// </summary>
     public class Catangens : IOneArgumentCalculator
     {
 

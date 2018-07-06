@@ -2,6 +2,9 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
+    /// <summary>
+    /// Function computes of the Tangens fuction
+    /// </summary>
     public class Tangens : IOneArgumentCalculator
     {
 

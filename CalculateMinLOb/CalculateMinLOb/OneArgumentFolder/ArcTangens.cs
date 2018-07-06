@@ -2,6 +2,9 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
+    /// <summary>
+    /// Function computes the ArcrTangens
+    /// </summary>
     public class ArcTangens : IOneArgumentCalculator
     {
 

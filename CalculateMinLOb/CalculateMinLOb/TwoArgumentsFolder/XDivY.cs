@@ -2,6 +2,9 @@
 
 namespace CalculateMinLOb.TwoArgumentsFolder
 {
+    /// <summary>
+    /// the function divides two integer numbers
+    /// </summary>
     public class XDivY : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)

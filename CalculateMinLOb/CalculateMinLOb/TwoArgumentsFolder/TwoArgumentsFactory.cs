@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Remoting.Messaging;
 
 namespace CalculateMinLOb.TwoArgumentsFolder
 {
@@ -19,8 +18,8 @@ namespace CalculateMinLOb.TwoArgumentsFolder
                 case "logxy": return new LogXY();
                 case "degreeroot": return new DegreeRoot();
                 case "remaine": return new Remaine();
-                case "average": return new Average();
-                case "averagegeo": return new AverageGeo();
+                case "arithmeticmean": return new ArithmeticMean();
+                case "geometricmean": return new GeometricMean();
                 case "xdivy": return new XDivY();
                 default:
                     throw new Exception("Неизвестная операция");

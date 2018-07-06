@@ -2,6 +2,9 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
+    /// <summary>
+    /// Function computes the construction of ten to the power of number
+    /// </summary>
     public class TenInX : IOneArgumentCalculator
     {
 

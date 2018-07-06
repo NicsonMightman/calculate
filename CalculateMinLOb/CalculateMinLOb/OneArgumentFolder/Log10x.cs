@@ -2,6 +2,9 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
+    /// <summary>
+    /// Function computes the Logarithm at the base of ten
+    /// </summary>
     public class Log10x : IOneArgumentCalculator
     {
         public double Calculate(double firstArgument)

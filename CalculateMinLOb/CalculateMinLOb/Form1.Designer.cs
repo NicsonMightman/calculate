@@ -53,8 +53,8 @@
             this.min = new System.Windows.Forms.Button();
             this.max = new System.Windows.Forms.Button();
             this.remaine = new System.Windows.Forms.Button();
-            this.average = new System.Windows.Forms.Button();
-            this.averagegeo = new System.Windows.Forms.Button();
+            this.arithmeticmean = new System.Windows.Forms.Button();
+            this.geometricmean = new System.Windows.Forms.Button();
             this.xdivy = new System.Windows.Forms.Button();
             this.log10x = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -300,25 +300,25 @@
             this.remaine.UseVisualStyleBackColor = true;
             this.remaine.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
-            // average
+            // arithmeticmean
             // 
-            this.average.Location = new System.Drawing.Point(140, 162);
-            this.average.Name = "average";
-            this.average.Size = new System.Drawing.Size(75, 23);
-            this.average.TabIndex = 25;
-            this.average.Text = "Average";
-            this.average.UseVisualStyleBackColor = true;
-            this.average.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            this.arithmeticmean.Location = new System.Drawing.Point(140, 162);
+            this.arithmeticmean.Name = "arithmeticmean";
+            this.arithmeticmean.Size = new System.Drawing.Size(75, 23);
+            this.arithmeticmean.TabIndex = 25;
+            this.arithmeticmean.Text = "ArithMean";
+            this.arithmeticmean.UseVisualStyleBackColor = true;
+            this.arithmeticmean.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
-            // averagegeo
+            // geometricmean
             // 
-            this.averagegeo.Location = new System.Drawing.Point(140, 192);
-            this.averagegeo.Name = "averagegeo";
-            this.averagegeo.Size = new System.Drawing.Size(75, 23);
-            this.averagegeo.TabIndex = 26;
-            this.averagegeo.Text = "AverageGeo";
-            this.averagegeo.UseVisualStyleBackColor = true;
-            this.averagegeo.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
+            this.geometricmean.Location = new System.Drawing.Point(140, 192);
+            this.geometricmean.Name = "geometricmean";
+            this.geometricmean.Size = new System.Drawing.Size(75, 23);
+            this.geometricmean.TabIndex = 26;
+            this.geometricmean.Text = "GeoMean";
+            this.geometricmean.UseVisualStyleBackColor = true;
+            this.geometricmean.Click += new System.EventHandler(this.TwoArgumentsButtonClick);
             // 
             // xdivy
             // 
@@ -347,8 +347,8 @@
             this.ClientSize = new System.Drawing.Size(465, 553);
             this.Controls.Add(this.log10x);
             this.Controls.Add(this.xdivy);
-            this.Controls.Add(this.averagegeo);
-            this.Controls.Add(this.average);
+            this.Controls.Add(this.geometricmean);
+            this.Controls.Add(this.arithmeticmean);
             this.Controls.Add(this.remaine);
             this.Controls.Add(this.max);
             this.Controls.Add(this.min);
@@ -408,8 +408,8 @@
         private System.Windows.Forms.Button min;
         private System.Windows.Forms.Button max;
         private System.Windows.Forms.Button remaine;
-        private System.Windows.Forms.Button average;
-        private System.Windows.Forms.Button averagegeo;
+        private System.Windows.Forms.Button arithmeticmean;
+        private System.Windows.Forms.Button geometricmean;
         private System.Windows.Forms.Button xdivy;
         private System.Windows.Forms.Button log10x;
     }

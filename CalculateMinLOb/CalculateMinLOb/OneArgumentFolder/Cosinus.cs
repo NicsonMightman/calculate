@@ -2,6 +2,9 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
+    /// <summary>
+    /// Function computes the Cosinus
+    /// </summary>
     public class Cosinus : IOneArgumentCalculator
     {
 

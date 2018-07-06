@@ -2,7 +2,9 @@
 
 namespace CalculateMinLOb.OneArgumentFolder
 {
-
+    /// <summary>
+    /// Function computes the Reverse function
+    /// </summary>
     public class Reverse : IOneArgumentCalculator
     {
         public double Calculate(double firstArgument)

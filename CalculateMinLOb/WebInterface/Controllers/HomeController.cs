@@ -2,7 +2,7 @@
 using CalculateMinLOb.TwoArgumentsFolder;
 using SelectListItem = System.Web.WebPages.Html.SelectListItem;
 
-namespace WebApplication.Controllers
+namespace WebInterface.Controllers
 {
     public class HomeController : Controller
     {
