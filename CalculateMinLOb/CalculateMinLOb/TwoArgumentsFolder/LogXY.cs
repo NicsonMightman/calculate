@@ -6,6 +6,10 @@ namespace CalculateMinLOb.TwoArgumentsFolder
     {
         double ITwoArgumentsCalculator.Calculate(double firstValue, double secondValue)
         {
+            if (firstValue == 0)
+            {
+                throw new Exception("logxy");
+            }
             return Math.Log(firstValue, secondValue);
         }
     }

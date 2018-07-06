@@ -64,13 +64,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgumentsFolder\AdditionTests.cs" />
     <Compile Include="TwoArgumentsFolder\AdditionTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\AverageGeoTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\AverageTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\DegreeRootTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\DivisionTests.cs" />
     <Compile Include="TwoArgumentsFolder\DivisionTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\LogXYTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\MaximumTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\MinimumTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\MinusTests.cs" />
     <Compile Include="TwoArgumentsFolder\MinusTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\MultiplicationTests.cs" />
     <Compile Include="TwoArgumentsFolder\MultiplicationTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\RemaineTestStrong.cs" />
     <Compile Include="TwoArgumentsFolder\TwoArgumentsFactoryTests.cs" />
+    <Compile Include="TwoArgumentsFolder\XDivYTestStrong.cs" />
+    <Compile Include="TwoArgumentsFolder\XInYTestStrong.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculateMinLOb\CalculateMinLOb.csproj">

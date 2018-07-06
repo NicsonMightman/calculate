@@ -6,6 +6,11 @@ namespace CalculateMinLOb.TwoArgumentsFolder
     {
         double ITwoArgumentsCalculator.Calculate(double firstValue, double secondValue)
         {
+            if (secondValue == 0)
+            {
+                throw new Exception("div");
+            }
+
             return Math.Pow(firstValue, 1/secondValue);
         }
     }
